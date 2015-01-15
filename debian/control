@@ -1,0 +1,12 @@
+Source: ros-indigo-phidgets-ir
+Section: misc
+Priority: extra
+Maintainer: Murilo FM <muhrix@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-geometry-msgs, ros-indigo-nodelet, ros-indigo-phidgets-api, ros-indigo-roscpp, ros-indigo-sensor-msgs, ros-indigo-std-msgs, ros-indigo-std-srvs, ros-indigo-tf
+Homepage: http://ros.org/wiki/phidgets_ir
+Standards-Version: 3.9.2
+
+Package: ros-indigo-phidgets-ir
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-geometry-msgs, ros-indigo-nodelet, ros-indigo-phidgets-api, ros-indigo-roscpp, ros-indigo-sensor-msgs, ros-indigo-std-msgs, ros-indigo-std-srvs, ros-indigo-tf
+Description: Driver for the Phidgets IR device
