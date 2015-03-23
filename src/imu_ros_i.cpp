@@ -76,6 +76,9 @@ ImuRosI::ImuRosI(ros::NodeHandle nh, ros::NodeHandle nh_private):
     }
   }
 
+  // signal that we have no orientation estimate (see Imu.msg)
+  imu_msg_.orientation_covariance[0] = -1;
+
   initDevice();
 
   if (has_compass_params)
@@ -107,7 +110,7 @@ void ImuRosI::initDevice()
 	{
 	  const char *err;
 		CPhidget_getErrorDescription(result, &err);
-		ROS_FATAL("Problem waiting for IMU attachment: %s Make sure the USB cable is connected and you have executed the phidgets_c_api/setup-udev.sh script.", err);
+		ROS_FATAL("Problem waiting for IMU attachment: %s Make sure the USB cable is connected and you have executed the phidgets_api/share/setup-udev.sh script.", err);
 	}
 
 	// set the data rate for the spatial events
