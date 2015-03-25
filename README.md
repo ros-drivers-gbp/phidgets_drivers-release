@@ -1,3 +1,28 @@
+## phidgets_drivers (hydro) - 0.2.2-0
+
+The packages in the `phidgets_drivers` repository were released into the `hydro` distro by running `/usr/bin/bloom-release phidgets_drivers --track hydro --rosdistro hydro` on `Wed, 25 Mar 2015 13:10:20 -0000`
+
+These packages were released:
+- `phidgets_api`
+- `phidgets_drivers`
+- `phidgets_imu`
+- `phidgets_ir`
+
+Version of package(s) in repository `phidgets_drivers`:
+- upstream repository: https://github.com/ccny-ros-pkg/phidgets_drivers.git
+- release repository: https://github.com/muhrix/phidgets_drivers-release.git
+- rosdistro version: `0.2.1-0`
+- old version: `0.2.1-0`
+- new version: `0.2.2-0`
+
+Versions of tools used:
+- bloom version: `0.5.19`
+- catkin_pkg version: `0.2.7`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.1`
+- vcstools version: `0.1.36`
+
+
 ## phidgets_drivers (indigo) - 0.2.2-0
 
 The packages in the `phidgets_drivers` repository were released into the `indigo` distro by running `/usr/bin/bloom-release phidgets_drivers --track indigo --rosdistro indigo` on `Mon, 23 Mar 2015 14:51:37 -0000`
