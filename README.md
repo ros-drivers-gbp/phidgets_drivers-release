@@ -1,3 +1,30 @@
+## phidgets_drivers (jade) - 0.7.0-0
+
+The packages in the `phidgets_drivers` repository were released into the `jade` distro by running `/usr/bin/bloom-release --rosdistro jade --track jade phidgets_drivers --override-release-repository-url https://github.com/ros-drivers-gbp/phidgets_drivers-release.git --edit` on `Fri, 17 Feb 2017 16:44:57 -0000`
+
+These packages were released:
+- `libphidget21`
+- `phidgets_api`
+- `phidgets_drivers`
+- `phidgets_imu`
+
+Version of package(s) in repository `phidgets_drivers`:
+
+- upstream repository: https://github.com/ros-drivers/phidgets_drivers.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.7.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.23`
+- catkin_pkg version: `0.3.1`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## phidgets_drivers (indigo) - 0.2.3-1
 
 The packages in the `phidgets_drivers` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo phidgets_drivers --override-release-repository-url https://github.com/ros-drivers-gbp/phidgets_drivers-release.git --edit` on `Fri, 17 Feb 2017 11:37:10 -0000`
