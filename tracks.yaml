@@ -15,11 +15,11 @@ tracks:
     name: phidgets_drivers
     patches: null
     release_inc: '0'
-    release_repo_url: ssh://git@github.com/muhrix/phidgets_drivers-release.git
+    release_repo_url: ssh://git@github.com/ros-drivers-gbp/phidgets_drivers-release.git
     release_tag: :{version}
     ros_distro: hydro
     vcs_type: git
-    vcs_uri: https://github.com/ccny-ros-pkg/phidgets_drivers.git
+    vcs_uri: https://github.com/ros-drivers/phidgets_drivers.git
     version: :{auto}
   indigo:
     actions:
@@ -37,9 +37,9 @@ tracks:
     name: phidgets_drivers
     patches: null
     release_inc: '0'
-    release_repo_url: ssh://git@github.com/muhrix/phidgets_drivers-release.git
+    release_repo_url: ssh://git@github.com/ros-drivers-gbp/phidgets_drivers-release.git
     release_tag: :{version}
     ros_distro: indigo
     vcs_type: git
-    vcs_uri: https://github.com/ccny-ros-pkg/phidgets_drivers.git
+    vcs_uri: https://github.com/ros-drivers/phidgets_drivers.git
     version: :{auto}
