@@ -1,0 +1,12 @@
+Source: ros-indigo-phidgets-drivers
+Section: misc
+Priority: extra
+Maintainer: Martin Guenther <martin.guenther@dfki.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/phidgets_drivers
+Standards-Version: 3.9.2
+
+Package: ros-indigo-phidgets-drivers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-phidgets-api, ros-indigo-phidgets-imu, ros-indigo-phidgets-ir
+Description: API and ROS drivers for Phidgets devices
