@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>phidgets_api</name>
-  <version>0.2.3</version>
+  <version>0.7.0</version>
   <description>A C++ Wrapper for the Phidgets C API</description>
 
   <maintainer email="martin.guenther@dfki.de">Martin Guenther</maintainer>
@@ -19,9 +19,9 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>libusb-1.0-dev</build_depend>
-  <build_depend>libphidgets</build_depend>
+  <build_depend>libphidget21</build_depend>
 
   <run_depend>libusb-1.0</run_depend>
-  <run_depend>libphidgets</run_depend>
+  <run_depend>libphidget21</run_depend>
 
 </package>

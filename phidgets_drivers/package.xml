@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>phidgets_drivers</name>
-  <version>0.2.3</version>
+  <version>0.7.0</version>
   <description>API and ROS drivers for Phidgets devices</description>
 
   <maintainer email="martin.guenther@dfki.de">Martin Guenther</maintainer>
@@ -22,7 +22,7 @@
   <buildtool_depend>catkin</buildtool_depend>
   <run_depend>phidgets_api</run_depend>
   <run_depend>phidgets_imu</run_depend>
-  <run_depend>phidgets_ir</run_depend>
+  <run_depend>libphidget21</run_depend>
 
   <export>
     <metapackage />
