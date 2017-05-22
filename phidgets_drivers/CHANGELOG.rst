@@ -2,6 +2,9 @@
 Changelog for package phidgets_drivers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.1 (2017-05-22)
+------------------
+
 0.7.0 (2017-02-17)
 ------------------
 * Remove phidgets_ir package
