@@ -2,6 +2,13 @@
 Changelog for package phidgets_api
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.1 (2017-05-22)
+------------------
+* Set event handlers for motor + encoder APIs
+* Added basic motor api
+* Added basic encoder board api
+* Contributors: Zach Anderson, Martin Günther
+
 0.7.0 (2017-02-17)
 ------------------
 * Use our own libphidget21 instead of external libphidgets
