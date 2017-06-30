@@ -1,0 +1,12 @@
+Source: ros-lunar-phidgets-drivers
+Section: misc
+Priority: extra
+Maintainer: Martin Guenther <martin.guenther@dfki.de>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: http://ros.org/wiki/phidgets_drivers
+Standards-Version: 3.9.2
+
+Package: ros-lunar-phidgets-drivers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-libphidget21, ros-lunar-phidgets-api, ros-lunar-phidgets-imu
+Description: API and ROS drivers for Phidgets devices
