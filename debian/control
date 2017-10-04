@@ -1,0 +1,12 @@
+Source: ros-kinetic-phidgets-imu
+Section: misc
+Priority: extra
+Maintainer: Martin Guenther <martin.guenther@dfki.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-diagnostic-msgs, ros-kinetic-diagnostic-updater, ros-kinetic-nodelet, ros-kinetic-phidgets-api, ros-kinetic-pluginlib, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-std-srvs, ros-kinetic-tf
+Homepage: http://ros.org/wiki/phidgets_imu
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-phidgets-imu
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-diagnostic-msgs, ros-kinetic-diagnostic-updater, ros-kinetic-imu-filter-madgwick, ros-kinetic-nodelet, ros-kinetic-phidgets-api, ros-kinetic-pluginlib, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-std-srvs, ros-kinetic-tf
+Description: Driver for the Phidgets Spatial 3/3/3 devices
