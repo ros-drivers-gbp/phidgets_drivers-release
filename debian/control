@@ -1,0 +1,12 @@
+Source: ros-lunar-libphidget21
+Section: misc
+Priority: extra
+Maintainer: Martin Guenther <martin.guenther@dfki.de>
+Build-Depends: debhelper (>= 9.0.0), libusb-dev, ros-lunar-catkin
+Homepage: http://ros.org/wiki/libphidget21
+Standards-Version: 3.9.2
+
+Package: ros-lunar-libphidget21
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libusb-dev
+Description: This package wraps the libphidget21 to use it as a ROS dependency
