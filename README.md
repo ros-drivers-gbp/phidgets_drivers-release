@@ -1,3 +1,31 @@
+## phidgets_drivers (kinetic) - 0.7.4-0
+
+The packages in the `phidgets_drivers` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release phidgets_drivers --track kinetic --rosdistro kinetic` on `Wed, 04 Oct 2017 13:51:26 -0000`
+
+These packages were released:
+- `libphidget21`
+- `phidgets_api`
+- `phidgets_drivers`
+- `phidgets_high_speed_encoder`
+- `phidgets_imu`
+
+Version of package(s) in repository `phidgets_drivers`:
+
+- upstream repository: https://github.com/ros-drivers/phidgets_drivers.git
+- release repository: https://github.com/ros-drivers-gbp/phidgets_drivers-release.git
+- rosdistro version: `0.7.3-0`
+- old version: `0.7.3-0`
+- new version: `0.7.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.6`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## phidgets_drivers (lunar) - 0.7.3-0
 
 The packages in the `phidgets_drivers` repository were released into the `lunar` distro by running `/usr/bin/bloom-release phidgets_drivers --track lunar --rosdistro lunar` on `Fri, 30 Jun 2017 14:06:38 -0000`
