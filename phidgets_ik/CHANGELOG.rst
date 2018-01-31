@@ -1,15 +1,14 @@
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package phidgets_high_speed_encoder
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package phidgets_ik
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.7.5 (2018-01-31)
 ------------------
+* Initial release of the phidgets_ik package for the Phidgets Interface Kit
+* Contributors: Russel Howe, James Sarrett, Dorian Goepp, Martin Günther
 
 0.7.4 (2017-10-04)
 ------------------
-* Merge pull request `#15 <https://github.com/ros-drivers/phidgets_drivers/issues/15>`_ from jlblancoc/kinetic
-  Add Phidgets high-speed encoder package
-* Contributors: Jose Luis Blanco-Claraco, Geoff Viola, Martin Günther
 
 0.7.3 (2017-06-30)
 ------------------
