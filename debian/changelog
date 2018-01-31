@@ -1,0 +1,56 @@
+ros-kinetic-phidgets-ik (0.7.5-0jessie) jessie; urgency=high
+
+  * Initial release of the phidgets_ik package for the Phidgets Interface Kit
+  * Contributors: Russel Howe, James Sarrett, Dorian Goepp, Martin Günther
+
+ -- Russel Howe <russel@appliedinvention.com>  Tue, 30 Jan 2018 23:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.4-0jessie) jessie; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Tue, 03 Oct 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.3-0jessie) jessie; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Thu, 29 Jun 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.2-0jessie) jessie; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Thu, 01 Jun 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.1-0jessie) jessie; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Sun, 21 May 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.0-0jessie) jessie; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Fri, 17 Feb 2017 16:40:00 -0000
+
+ros-kinetic-phidgets-ik (0.2.3-0jessie) jessie; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Fri, 17 Feb 2017 11:11:00 -0000
+
+ros-kinetic-phidgets-ik (0.2.2-0jessie) jessie; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Sun, 22 Mar 2015 23:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.2.1-0jessie) jessie; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Wed, 14 Jan 2015 23:00:00 -0000
+
+
