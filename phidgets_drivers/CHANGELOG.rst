@@ -2,6 +2,9 @@
 Changelog for package phidgets_drivers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.5 (2018-01-31)
+------------------
+
 0.7.4 (2017-10-04)
 ------------------
 * Add phidgets_high_speed_encoder to metapackage
