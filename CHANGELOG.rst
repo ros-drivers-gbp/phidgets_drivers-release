@@ -2,6 +2,9 @@
 Changelog for package phidgets_high_speed_encoder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.5 (2018-01-31)
+------------------
+
 0.7.4 (2017-10-04)
 ------------------
 * Merge pull request `#15 <https://github.com/ros-drivers/phidgets_drivers/issues/15>`_ from jlblancoc/kinetic
