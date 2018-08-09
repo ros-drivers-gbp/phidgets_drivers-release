@@ -1,0 +1,12 @@
+Source: ros-melodic-phidgets-drivers
+Section: misc
+Priority: extra
+Maintainer: Martin Guenther <martin.guenther@dfki.de>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://ros.org/wiki/phidgets_drivers
+Standards-Version: 3.9.2
+
+Package: ros-melodic-phidgets-drivers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-libphidget21, ros-melodic-phidgets-api, ros-melodic-phidgets-high-speed-encoder, ros-melodic-phidgets-imu
+Description: API and ROS drivers for Phidgets devices
