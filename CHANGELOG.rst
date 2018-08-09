@@ -2,6 +2,9 @@
 Changelog for package phidgets_api
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.6 (2018-08-09)
+------------------
+
 0.7.5 (2018-01-31)
 ------------------
 * Add support for the phidgets_ik (Phidgets Interface Kit)
