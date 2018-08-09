@@ -19,6 +19,7 @@ using namespace std;
 namespace phidgets {
 
 const float G = 9.81;
+const float MAX_TIMEDIFF_SECONDS = 0.1;
 
 class ImuRosI : public Imu
 {
@@ -51,9 +52,8 @@ class ImuRosI : public Imu
     int error_number_;
     double target_publish_freq_;
 
-    bool initialized_;
     boost::mutex mutex_;
-    ros::Time last_imu_time_;
+    ros::Time last_published_time_;
     int serial_number_;
 
     ImuMsg imu_msg_;
