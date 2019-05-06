@@ -1,0 +1,74 @@
+ros-kinetic-phidgets-ik (0.7.8-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Sun, 05 May 2019 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.7-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Mon, 17 Sep 2018 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.6-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Wed, 08 Aug 2018 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.5-1xenial) xenial; urgency=high
+
+  * Initial release of the phidgets_ik package for the Phidgets Interface Kit
+  * Contributors: Russel Howe, James Sarrett, Dorian Goepp, Martin Günther
+
+ -- Russel Howe <russel@appliedinvention.com>  Tue, 30 Jan 2018 23:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.4-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Tue, 03 Oct 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.3-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Thu, 29 Jun 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.2-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Thu, 01 Jun 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.1-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Sun, 21 May 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.7.0-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Fri, 17 Feb 2017 16:40:00 -0000
+
+ros-kinetic-phidgets-ik (0.2.3-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Fri, 17 Feb 2017 11:11:00 -0000
+
+ros-kinetic-phidgets-ik (0.2.2-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Sun, 22 Mar 2015 23:00:00 -0000
+
+ros-kinetic-phidgets-ik (0.2.1-1xenial) xenial; urgency=high
+
+
+
+ -- Russel Howe <russel@appliedinvention.com>  Wed, 14 Jan 2015 23:00:00 -0000
+
+
