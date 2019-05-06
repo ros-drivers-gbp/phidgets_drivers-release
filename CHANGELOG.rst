@@ -2,6 +2,9 @@
 Changelog for package phidgets_imu
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.8 (2019-05-06)
+------------------
+
 0.7.7 (2018-09-18)
 ------------------
 * Add parameter use_imu_time (default true) (`#27 <https://github.com/ros-drivers/phidgets_drivers/issues/27>`_)
