@@ -2,6 +2,9 @@
 Changelog for package phidgets_high_speed_encoder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.9 (2019-06-28)
+------------------
+
 0.7.8 (2019-05-06)
 ------------------
 * phidgets_high_speed_encoder: fix missing tick2rad values (`#30 <https://github.com/ros-drivers/phidgets_drivers/issues/30>`_)
