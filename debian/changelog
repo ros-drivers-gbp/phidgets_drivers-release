@@ -1,0 +1,82 @@
+ros-melodic-phidgets-high-speed-encoder (0.7.9-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Thu, 27 Jun 2019 22:00:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.7.8-1stretch) stretch; urgency=high
+
+  * phidgets_high_speed_encoder: fix missing tick2rad values (#30 <https://github.com/ros-drivers/phidgets_drivers/issues/30>)
+  * Contributors: Charles Brian Quinn
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Sun, 05 May 2019 22:00:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.7.7-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Mon, 17 Sep 2018 22:00:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.7.6-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Wed, 08 Aug 2018 22:00:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.7.5-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Tue, 30 Jan 2018 23:00:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.7.4-1stretch) stretch; urgency=high
+
+  * Merge pull request #15 <https://github.com/ros-drivers/phidgets_drivers/issues/15> from jlblancoc/kinetic
+    Add Phidgets high-speed encoder package
+  * Contributors: Jose Luis Blanco-Claraco, Geoff Viola, Martin Günther
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Tue, 03 Oct 2017 22:00:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.7.3-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Thu, 29 Jun 2017 22:00:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.7.2-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Thu, 01 Jun 2017 22:00:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.7.1-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Sun, 21 May 2017 22:00:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.7.0-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Fri, 17 Feb 2017 16:40:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.2.3-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Fri, 17 Feb 2017 11:11:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.2.2-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Sun, 22 Mar 2015 23:00:00 -0000
+
+ros-melodic-phidgets-high-speed-encoder (0.2.1-1stretch) stretch; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Wed, 14 Jan 2015 23:00:00 -0000
+
+
