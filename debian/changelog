@@ -1,0 +1,86 @@
+ros-melodic-phidgets-msgs (0.7.10-1stretch) stretch; urgency=high
+
+  * Split custom messages into their own package.
+  * Contributors: Chris Lalancette, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 02 Jun 2020 22:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.7.9-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 27 Jun 2019 22:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.7.8-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Sun, 05 May 2019 22:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.7.7-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 17 Sep 2018 22:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.7.6-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 08 Aug 2018 22:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.7.5-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 30 Jan 2018 23:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.7.4-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 03 Oct 2017 22:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.7.3-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 29 Jun 2017 22:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.7.2-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 01 Jun 2017 22:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.7.1-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Sun, 21 May 2017 22:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.7.0-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 17 Feb 2017 16:40:00 -0000
+
+ros-melodic-phidgets-msgs (0.2.3-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 17 Feb 2017 11:11:00 -0000
+
+ros-melodic-phidgets-msgs (0.2.2-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Sun, 22 Mar 2015 23:00:00 -0000
+
+ros-melodic-phidgets-msgs (0.2.1-1stretch) stretch; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 14 Jan 2015 23:00:00 -0000
+
+
