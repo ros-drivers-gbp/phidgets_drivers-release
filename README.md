@@ -1,3 +1,33 @@
+## phidgets_drivers (melodic) - 0.7.10-1
+
+The packages in the `phidgets_drivers` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -y phidgets_drivers --rosdistro melodic` on `Wed, 03 Jun 2020 09:14:37 -0000`
+
+These packages were released:
+- `libphidget21`
+- `phidgets_api`
+- `phidgets_drivers`
+- `phidgets_high_speed_encoder`
+- `phidgets_ik`
+- `phidgets_imu`
+- `phidgets_msgs`
+
+Version of package(s) in repository `phidgets_drivers`:
+
+- upstream repository: https://github.com/ros-drivers/phidgets_drivers.git
+- release repository: https://github.com/ros-drivers-gbp/phidgets_drivers-release.git
+- rosdistro version: `0.7.9-1`
+- old version: `0.7.9-1`
+- new version: `0.7.10-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.7`
+- catkin_pkg version: `0.4.20`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## phidgets_drivers (kinetic) - 0.7.10-1
 
 The packages in the `phidgets_drivers` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -y phidgets_drivers --rosdistro kinetic` on `Wed, 03 Jun 2020 09:10:28 -0000`
