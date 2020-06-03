@@ -1,0 +1,97 @@
+ros-kinetic-phidgets-high-speed-encoder (0.7.10-1xenial) xenial; urgency=high
+
+  * Update maintainers in package.xml
+  * Run clang-format on the whole codebase.
+  * Switch to C++14 everywhere.
+  * Split custom messages into their own package.
+  * Rewrite the high speed encoder node.
+  * Change API from separate open/waitForAttachment to openAndWaitForAttachment.
+  * Small cleanups throughout the code.
+  * Style cleanup.
+  * Switch to package format 2.
+  * Contributors: Chris Lalancette, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 02 Jun 2020 22:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.7.9-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Thu, 27 Jun 2019 22:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.7.8-1xenial) xenial; urgency=high
+
+  * phidgets_high_speed_encoder: fix missing tick2rad values (#30 <https://github.com/ros-drivers/phidgets_drivers/issues/30>)
+  * Contributors: Charles Brian Quinn
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Sun, 05 May 2019 22:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.7.7-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Mon, 17 Sep 2018 22:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.7.6-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Wed, 08 Aug 2018 22:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.7.5-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Tue, 30 Jan 2018 23:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.7.4-1xenial) xenial; urgency=high
+
+  * Merge pull request #15 <https://github.com/ros-drivers/phidgets_drivers/issues/15> from jlblancoc/kinetic
+    Add Phidgets high-speed encoder package
+  * Contributors: Jose Luis Blanco-Claraco, Geoff Viola, Martin Günther
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Tue, 03 Oct 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.7.3-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Thu, 29 Jun 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.7.2-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Thu, 01 Jun 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.7.1-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Sun, 21 May 2017 22:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.7.0-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Fri, 17 Feb 2017 16:40:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.2.3-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Fri, 17 Feb 2017 11:11:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.2.2-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Sun, 22 Mar 2015 23:00:00 -0000
+
+ros-kinetic-phidgets-high-speed-encoder (0.2.1-1xenial) xenial; urgency=high
+
+
+
+ -- Geoff Viola <geoffrey.viola@asirobots.com>  Wed, 14 Jan 2015 23:00:00 -0000
+
+
