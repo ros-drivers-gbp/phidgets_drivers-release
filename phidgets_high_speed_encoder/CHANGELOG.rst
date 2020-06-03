@@ -2,15 +2,29 @@
 Changelog for package phidgets_high_speed_encoder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.7.10 (2020-06-03)
--------------------
+1.0.0 (2020-06-03)
+------------------
 * Update maintainers in package.xml
+* Switch to libphidget22
+* Add launch files for all drivers.
+* Add in try/catch blocks for connecting.
+  If an error occurs, we catch it, print it, then re-throw it.
+  This allows us to show a better error when using nodelets.
+* Fixes from review.
+* Documentation updates to README.md
+* Set the publish_rate to 0 by default.
+  This means we will only publish on changes.
+* Add in the license files and add to the headers.
+* Remove nodes in favor of nodelets.
+* Fix a small typo.
+* Rewrite High Speed Encoder to use libphidget22.
+* Rename Phidget class to Phidget21 class.
+* Remove unused std_msgs dependency from Phidgets High Speed Encoder.
 * Run clang-format on the whole codebase.
 * Switch to C++14 everywhere.
 * Split custom messages into their own package.
 * Rewrite the high speed encoder node.
 * Change API from separate open/waitForAttachment to openAndWaitForAttachment.
-* Small cleanups throughout the code.
 * Style cleanup.
 * Switch to package format 2.
 * Contributors: Chris Lalancette, Martin Günther

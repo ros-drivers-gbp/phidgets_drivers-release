@@ -1,28 +1,29 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>phidgets_ik</name>
-  <version>0.7.10</version>
+  <version>1.0.0</version>
   <description>Driver for the Phidgets InterfaceKit devices</description>
+
+  <license>BSD</license>
 
   <maintainer email="martin.guenther@dfki.de">Martin Günther</maintainer>
   <maintainer email="clalancette@openrobotics.org">Chris Lalancette</maintainer>
 
-  <license>BSD</license>
+  <!--
+  <url type="website">http://ros.org/wiki/phidgets_ik</url>
+  -->
 
   <author>James Sarrett</author>
   <author email="russel@appliedinvention.com">Russel Howe</author>
 
+
   <buildtool_depend>catkin</buildtool_depend>
 
-  <depend>nodelet</depend>
-  <depend>phidgets_api</depend>
-  <depend>phidgets_msgs</depend>
-  <depend>pluginlib</depend>
-  <depend>roscpp</depend>
-  <depend>sensor_msgs</depend>
-  <depend>std_msgs</depend>
+  <depend>roslaunch</depend>
 
-  <export>
-    <nodelet plugin="${prefix}/phidgets_ik_nodelet.xml" />
-  </export>
+  <exec_depend>nodelet</exec_depend>
+  <exec_depend>phidgets_analog_inputs</exec_depend>
+  <exec_depend>phidgets_digital_inputs</exec_depend>
+  <exec_depend>phidgets_digital_outputs</exec_depend>
+
 </package>
