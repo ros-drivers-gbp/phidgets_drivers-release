@@ -2,6 +2,11 @@
 Changelog for package phidgets_gyroscope
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.1 (2020-06-04)
+------------------
+* Set cmake_policy CMP0048 to fix warning
+* Contributors: Martin Günther
+
 1.0.0 (2020-06-03)
 ------------------
 * Fix wrong defaults for standard deviations (`#48 <https://github.com/ros-drivers/phidgets_drivers/issues/48>`_)
