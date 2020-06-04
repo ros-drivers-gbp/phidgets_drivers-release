@@ -1,0 +1,15 @@
+ros-noetic-phidgets-msgs (1.0.1-1focal) focal; urgency=high
+
+  * Set cmake_policy CMP0048 to fix warning
+  * Contributors: Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 03 Jun 2020 22:00:00 -0000
+
+ros-noetic-phidgets-msgs (1.0.0-1focal) focal; urgency=high
+
+  * Split custom messages into their own package.
+  * Contributors: Chris Lalancette, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 02 Jun 2020 22:00:00 -0000
+
+
