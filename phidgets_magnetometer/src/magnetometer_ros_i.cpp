@@ -203,8 +203,9 @@ void MagnetometerRosI::publishLatest()
 
     if (time_in_ns < last_ros_stamp_ns_)
     {
-        ROS_WARN("Time went backwards (%lu < %lu)!", time_in_ns,
-                 last_ros_stamp_ns_);
+        ROS_WARN("Time went backwards (%lu < %lu)! Not publishing message.",
+                 time_in_ns, last_ros_stamp_ns_);
+        return;
     }
 
     last_ros_stamp_ns_ = time_in_ns;
@@ -297,7 +298,7 @@ void MagnetometerRosI::magnetometerChangeCallback(
             can_publish_ = true;
         } else
         {
-            ROS_WARN(
+            ROS_DEBUG(
                 "Data not within acceptable window for synchronization: "
                 "expected between %ld and %ld, saw %ld",
                 data_interval_ns_ - cb_delta_epsilon_ns_,
