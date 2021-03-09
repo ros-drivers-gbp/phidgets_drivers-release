@@ -2,6 +2,9 @@
 Changelog for package phidgets_high_speed_encoder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.2 (2021-03-09)
+------------------
+
 1.0.1 (2020-06-04)
 ------------------
 * Set cmake_policy CMP0048 to fix warning
