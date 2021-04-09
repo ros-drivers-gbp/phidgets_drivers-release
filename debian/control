@@ -1,0 +1,12 @@
+Source: ros-kinetic-phidgets-api
+Section: misc
+Priority: optional
+Maintainer: Martin Günther <martin.guenther@dfki.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-libphidget21
+Homepage: http://ros.org/wiki/phidgets_api
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-phidgets-api
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-libphidget21
+Description: A C++ Wrapper for the Phidgets C API
