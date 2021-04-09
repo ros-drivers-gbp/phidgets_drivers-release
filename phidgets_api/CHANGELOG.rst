@@ -2,6 +2,9 @@
 Changelog for package phidgets_api
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.11 (2021-04-09)
+-------------------
+
 0.7.10 (2020-06-03)
 -------------------
 * Update maintainers in package.xml
