@@ -2,6 +2,11 @@
 Changelog for package phidgets_digital_inputs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.3 (2021-09-29)
+------------------
+* Add missing license headers
+* Contributors: Martin Günther
+
 1.0.2 (2021-03-09)
 ------------------
 
