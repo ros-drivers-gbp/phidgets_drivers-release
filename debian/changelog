@@ -1,0 +1,8 @@
+ros-noetic-phidgets-analog-outputs (1.0.3-1focal) focal; urgency=high
+
+  * Add Analog Outputs (#103 <https://github.com/ros-drivers/phidgets_drivers/issues/103>)
+  * Contributors: Carsten Plasberg
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 28 Sep 2021 22:00:00 -0000
+
+
