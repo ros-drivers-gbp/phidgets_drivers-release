@@ -27,26 +27,52 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#ifndef PHIDGETS_ANALOG_OUTPUTS_ANALOG_OUTPUTS_ROS_I_H
+#define PHIDGETS_ANALOG_OUTPUTS_ANALOG_OUTPUTS_ROS_I_H
+
 #include <memory>
+#include <string>
+#include <vector>
 
-#include <nodelet/nodelet.h>
-#include <pluginlib/class_list_macros.h>
 #include <ros/ros.h>
+#include <std_msgs/Float64.h>
 
-#include "phidgets_digital_inputs/digital_inputs_ros_i.h"
-#include "phidgets_digital_inputs/phidgets_digital_inputs_nodelet.h"
+#include "phidgets_api/analog_outputs.h"
+#include "phidgets_msgs/SetAnalogOutput.h"
 
-typedef phidgets::PhidgetsDigitalInputsNodelet PhidgetsDigitalInputsNodelet;
+namespace phidgets {
 
-PLUGINLIB_EXPORT_CLASS(PhidgetsDigitalInputsNodelet, nodelet::Nodelet)
-
-void PhidgetsDigitalInputsNodelet::onInit()
+class AnalogOutputSetter final
 {
-    NODELET_INFO("Initializing Phidgets Digital Inputs Nodelet");
+  public:
+    explicit AnalogOutputSetter(AnalogOutputs* aos, int index,
+                                ros::NodeHandle nh,
+                                const std::string& topicname);
 
-    // TODO: Do we want the single threaded or multithreaded NH?
-    ros::NodeHandle nh = getMTNodeHandle();
-    ros::NodeHandle nh_private = getMTPrivateNodeHandle();
+  private:
+    void setMsgCallback(const std_msgs::Float64::ConstPtr& msg);
+    ros::Subscriber subscription_;
+    AnalogOutputs* aos_;
+    int index_;
+};
 
-    dis_ = std::make_unique<DigitalInputsRosI>(nh, nh_private);
-}
+class AnalogOutputsRosI final
+{
+  public:
+    explicit AnalogOutputsRosI(ros::NodeHandle nh, ros::NodeHandle nh_private);
+
+  private:
+    std::unique_ptr<AnalogOutputs> aos_;
+    std::vector<std::unique_ptr<AnalogOutputSetter>> out_subs_;
+
+    ros::NodeHandle nh_;
+    ros::NodeHandle nh_private_;
+    ros::ServiceServer out_srv_;
+
+    bool setSrvCallback(phidgets_msgs::SetAnalogOutput::Request& req,
+                        phidgets_msgs::SetAnalogOutput::Response& res);
+};
+
+}  // namespace phidgets
+
+#endif  // PHIDGETS_ANALOG_OUTPUTS_ANALOG_OUTPUTS_ROS_I_H
