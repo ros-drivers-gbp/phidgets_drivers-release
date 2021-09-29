@@ -1,1 +1,1 @@
-{"trim": "", "base": "573fd7a", "trimbase": "", "parent": "debian/noetic/libphidget22", "previous": "f39bff4"}
+{"base": "c7118693", "parent": "debian/noetic/libphidget22", "previous": "a4a29ca7", "trim": "", "trimbase": ""}
