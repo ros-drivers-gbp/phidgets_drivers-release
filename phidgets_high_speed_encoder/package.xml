@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>phidgets_high_speed_encoder</name>
-  <version>0.7.11</version>
+  <version>1.0.3</version>
   <description>Driver for the Phidgets high speed encoder devices</description>
 
   <maintainer email="martin.guenther@dfki.de">Martin Günther</maintainer>
@@ -19,8 +19,8 @@
   <depend>phidgets_msgs</depend>
   <depend>pluginlib</depend>
   <depend>roscpp</depend>
+  <depend>roslaunch</depend>
   <depend>sensor_msgs</depend>
-  <depend>std_msgs</depend>
 
   <export>
     <nodelet plugin="${prefix}/phidgets_high_speed_encoder_nodelet.xml" />
