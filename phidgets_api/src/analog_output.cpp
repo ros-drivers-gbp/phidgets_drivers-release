@@ -27,26 +27,49 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <memory>
+#include <stdexcept>
+#include <string>
 
-#include <nodelet/nodelet.h>
-#include <pluginlib/class_list_macros.h>
-#include <ros/ros.h>
+#include <libphidget22/phidget22.h>
 
-#include "phidgets_digital_inputs/digital_inputs_ros_i.h"
-#include "phidgets_digital_inputs/phidgets_digital_inputs_nodelet.h"
+#include "phidgets_api/analog_output.h"
+#include "phidgets_api/phidget22.h"
 
-typedef phidgets::PhidgetsDigitalInputsNodelet PhidgetsDigitalInputsNodelet;
+namespace phidgets {
 
-PLUGINLIB_EXPORT_CLASS(PhidgetsDigitalInputsNodelet, nodelet::Nodelet)
-
-void PhidgetsDigitalInputsNodelet::onInit()
+AnalogOutput::AnalogOutput(int32_t serial_number, int hub_port,
+                           bool is_hub_port_device, int channel)
 {
-    NODELET_INFO("Initializing Phidgets Digital Inputs Nodelet");
+    PhidgetReturnCode ret;
+    ret = PhidgetVoltageOutput_create(&ao_handle_);
 
-    // TODO: Do we want the single threaded or multithreaded NH?
-    ros::NodeHandle nh = getMTNodeHandle();
-    ros::NodeHandle nh_private = getMTPrivateNodeHandle();
+    if (ret != EPHIDGET_OK)
+    {
+        throw Phidget22Error(
+            "Failed to create AnalogOutput handle for channel " +
+                std::to_string(channel),
+            ret);
+    }
 
-    dis_ = std::make_unique<DigitalInputsRosI>(nh, nh_private);
+    helpers::openWaitForAttachment(reinterpret_cast<PhidgetHandle>(ao_handle_),
+                                   serial_number, hub_port, is_hub_port_device,
+                                   channel);
 }
+
+AnalogOutput::~AnalogOutput()
+{
+    PhidgetHandle handle = reinterpret_cast<PhidgetHandle>(ao_handle_);
+    helpers::closeAndDelete(&handle);
+}
+
+void AnalogOutput::setOutputVoltage(double voltage) const
+{
+    PhidgetReturnCode ret =
+        PhidgetVoltageOutput_setVoltage(ao_handle_, voltage);
+    if (ret != EPHIDGET_OK)
+    {
+        throw Phidget22Error("Failed to set analog output voltage", ret);
+    }
+}
+
+}  // namespace phidgets
