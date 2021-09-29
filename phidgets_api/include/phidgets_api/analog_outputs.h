@@ -27,26 +27,36 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#ifndef PHIDGETS_API_ANALOG_OUTPUTS_H
+#define PHIDGETS_API_ANALOG_OUTPUTS_H
+
 #include <memory>
+#include <vector>
 
-#include <nodelet/nodelet.h>
-#include <pluginlib/class_list_macros.h>
-#include <ros/ros.h>
+#include "phidgets_api/analog_output.h"
+#include "phidgets_api/phidget22.h"
 
-#include "phidgets_digital_inputs/digital_inputs_ros_i.h"
-#include "phidgets_digital_inputs/phidgets_digital_inputs_nodelet.h"
+namespace phidgets {
 
-typedef phidgets::PhidgetsDigitalInputsNodelet PhidgetsDigitalInputsNodelet;
-
-PLUGINLIB_EXPORT_CLASS(PhidgetsDigitalInputsNodelet, nodelet::Nodelet)
-
-void PhidgetsDigitalInputsNodelet::onInit()
+class AnalogOutputs final
 {
-    NODELET_INFO("Initializing Phidgets Digital Inputs Nodelet");
+  public:
+    PHIDGET22_NO_COPY_NO_MOVE_NO_ASSIGN(AnalogOutputs)
 
-    // TODO: Do we want the single threaded or multithreaded NH?
-    ros::NodeHandle nh = getMTNodeHandle();
-    ros::NodeHandle nh_private = getMTPrivateNodeHandle();
+    explicit AnalogOutputs(int32_t serial_number, int hub_port,
+                           bool is_hub_port_device);
 
-    dis_ = std::make_unique<DigitalInputsRosI>(nh, nh_private);
-}
+    ~AnalogOutputs();
+
+    uint32_t getOutputCount() const noexcept;
+
+    void setOutputVoltage(int index, double voltage) const;
+
+  private:
+    uint32_t output_count_;
+    std::vector<std::unique_ptr<AnalogOutput>> aos_;
+};
+
+}  // namespace phidgets
+
+#endif  // PHIDGETS_API_ANALOG_INPUTS_H
