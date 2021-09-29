@@ -1,1 +1,1 @@
-{"trim": "", "base": "5bf7e33", "trimbase": "", "parent": "debian/noetic/phidgets_magnetometer", "previous": "36b8583"}
+{"base": "8c000987", "parent": "debian/noetic/phidgets_magnetometer", "previous": "41a6db4e", "trim": "", "trimbase": ""}
