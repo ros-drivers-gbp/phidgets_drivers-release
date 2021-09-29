@@ -30,19 +30,19 @@
 #include <memory>
 
 #include <ros/ros.h>
-#include <std_msgs/Bool.h>
+#include <std_msgs/Float64.h>
 
-#include "phidgets_api/digital_outputs.h"
-#include "phidgets_digital_outputs/digital_outputs_ros_i.h"
-#include "phidgets_msgs/SetDigitalOutput.h"
+#include "phidgets_api/analog_outputs.h"
+#include "phidgets_analog_outputs/analog_outputs_ros_i.h"
+#include "phidgets_msgs/SetAnalogOutput.h"
 
 namespace phidgets {
 
-DigitalOutputsRosI::DigitalOutputsRosI(ros::NodeHandle nh,
-                                       ros::NodeHandle nh_private)
+AnalogOutputsRosI::AnalogOutputsRosI(ros::NodeHandle nh,
+                                     ros::NodeHandle nh_private)
     : nh_(nh), nh_private_(nh_private)
 {
-    ROS_INFO("Starting Phidgets Digital Outputs");
+    ROS_INFO("Starting Phidgets Analog Outputs");
 
     int serial_num;
     if (!nh_private_.getParam("serial", serial_num))
@@ -61,55 +61,55 @@ DigitalOutputsRosI::DigitalOutputsRosI(ros::NodeHandle nh,
         is_hub_port_device = false;
     }
 
-    ROS_INFO("Connecting to Phidgets DigitalOutputs serial %d, hub port %d ...",
+    ROS_INFO("Connecting to Phidgets AnalogOutputs serial %d, hub port %d ...",
              serial_num, hub_port);
 
     try
     {
-        dos_ = std::make_unique<DigitalOutputs>(serial_num, hub_port,
-                                                is_hub_port_device);
+        aos_ = std::make_unique<AnalogOutputs>(serial_num, hub_port,
+                                               is_hub_port_device);
 
     } catch (const Phidget22Error& err)
     {
-        ROS_ERROR("DigitalOutputs: %s", err.what());
+        ROS_ERROR("AnalogOutputs: %s", err.what());
         throw;
     }
 
-    int n_out = dos_->getOutputCount();
+    int n_out = aos_->getOutputCount();
     ROS_INFO("Connected %d outputs", n_out);
     out_subs_.resize(n_out);
     for (int i = 0; i < n_out; i++)
     {
-        char topicname[] = "digital_output00";
-        snprintf(topicname, sizeof(topicname), "digital_output%02d", i);
+        char topicname[] = "analog_output00";
+        snprintf(topicname, sizeof(topicname), "analog_output%02d", i);
         out_subs_[i] =
-            std::make_unique<DigitalOutputSetter>(dos_.get(), i, nh, topicname);
+            std::make_unique<AnalogOutputSetter>(aos_.get(), i, nh, topicname);
     }
-    out_srv_ = nh_.advertiseService("set_digital_output",
-                                    &DigitalOutputsRosI::setSrvCallback, this);
+    out_srv_ = nh_.advertiseService("set_analog_output",
+                                    &AnalogOutputsRosI::setSrvCallback, this);
 }
 
-bool DigitalOutputsRosI::setSrvCallback(
-    phidgets_msgs::SetDigitalOutput::Request& req,
-    phidgets_msgs::SetDigitalOutput::Response& res)
+bool AnalogOutputsRosI::setSrvCallback(
+    phidgets_msgs::SetAnalogOutput::Request& req,
+    phidgets_msgs::SetAnalogOutput::Response& res)
 {
-    dos_->setOutputState(req.index, req.state);
+    aos_->setOutputVoltage(req.index, req.voltage);
     res.success = true;
     return true;
 }
 
-DigitalOutputSetter::DigitalOutputSetter(DigitalOutputs* dos, int index,
-                                         ros::NodeHandle nh,
-                                         const std::string& topicname)
-    : dos_(dos), index_(index)
+AnalogOutputSetter::AnalogOutputSetter(AnalogOutputs* aos, int index,
+                                       ros::NodeHandle nh,
+                                       const std::string& topicname)
+    : aos_(aos), index_(index)
 {
     subscription_ =
-        nh.subscribe(topicname, 1, &DigitalOutputSetter::setMsgCallback, this);
+        nh.subscribe(topicname, 1, &AnalogOutputSetter::setMsgCallback, this);
 }
 
-void DigitalOutputSetter::setMsgCallback(const std_msgs::Bool::ConstPtr& msg)
+void AnalogOutputSetter::setMsgCallback(const std_msgs::Float64::ConstPtr& msg)
 {
-    dos_->setOutputState(index_, msg->data);
+    aos_->setOutputVoltage(index_, msg->data);
 }
 
 }  // namespace phidgets
