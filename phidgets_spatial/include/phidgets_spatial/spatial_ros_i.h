@@ -57,6 +57,8 @@ class SpatialRosI final
     void timerCallback(const ros::TimerEvent &event);
     ros::Timer timer_;
     int publish_rate_;
+    std::string server_name_;
+    std::string server_ip_;
     ros::Publisher cal_publisher_;
     ros::ServiceServer cal_srv_;
     ros::Publisher imu_pub_;
@@ -98,11 +100,19 @@ class SpatialRosI final
     double last_mag_y_;
     double last_mag_z_;
 
+    // Onboard orientation estimation results
+    double last_quat_w_;
+    double last_quat_x_;
+    double last_quat_y_;
+    double last_quat_z_;
+
     void publishLatest();
 
     void spatialDataCallback(const double acceleration[3],
                              const double angular_rate[3],
                              const double magnetic_field[3], double timestamp);
+    void spatialAlgorithmDataCallback(const double quaternion[4],
+                                      double timestamp);
     void attachCallback();
     void detachCallback();
 };
