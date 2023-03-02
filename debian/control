@@ -1,0 +1,12 @@
+Source: ros-noetic-phidgets-drivers
+Section: misc
+Priority: optional
+Maintainer: Martin Günther <martin.guenther@dfki.de>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://ros.org/wiki/phidgets_drivers
+Standards-Version: 3.9.2
+
+Package: ros-noetic-phidgets-drivers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-libphidget22, ros-noetic-phidgets-accelerometer, ros-noetic-phidgets-analog-inputs, ros-noetic-phidgets-api, ros-noetic-phidgets-digital-inputs, ros-noetic-phidgets-digital-outputs, ros-noetic-phidgets-gyroscope, ros-noetic-phidgets-high-speed-encoder, ros-noetic-phidgets-ik, ros-noetic-phidgets-magnetometer, ros-noetic-phidgets-motors, ros-noetic-phidgets-msgs, ros-noetic-phidgets-spatial, ros-noetic-phidgets-temperature
+Description: API and ROS drivers for Phidgets devices
