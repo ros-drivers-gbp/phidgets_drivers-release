@@ -1,0 +1,43 @@
+ros-noetic-phidgets-analog-outputs (1.0.8-1focal) focal; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Sun, 26 Nov 2023 23:00:00 -0000
+
+ros-noetic-phidgets-analog-outputs (1.0.7-1focal) focal; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 01 Mar 2023 23:00:00 -0000
+
+ros-noetic-phidgets-analog-outputs (1.0.6-1focal) focal; urgency=high
+
+  * Merge pull request #129 <https://github.com/ros-drivers/phidgets_drivers/issues/129> from mintar/feat-pre-commit
+    Add pre-commit, move from travis to GitHub actions, fix style
+  * Don't modify CMAKE_CXX_FLAGS
+  * Fix clang-format
+  * Add support for VINT networkhub (#127 <https://github.com/ros-drivers/phidgets_drivers/issues/127>)
+  * Contributors: James Haley, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 30 Nov 2022 23:00:00 -0000
+
+ros-noetic-phidgets-analog-outputs (1.0.5-1focal) focal; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 16 Feb 2022 23:00:00 -0000
+
+ros-noetic-phidgets-analog-outputs (1.0.4-1focal) focal; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 21 Oct 2021 22:00:00 -0000
+
+ros-noetic-phidgets-analog-outputs (1.0.3-1focal) focal; urgency=high
+
+  * Add Analog Outputs (#103 <https://github.com/ros-drivers/phidgets_drivers/issues/103>)
+  * Contributors: Carsten Plasberg
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 28 Sep 2021 22:00:00 -0000
+
+
