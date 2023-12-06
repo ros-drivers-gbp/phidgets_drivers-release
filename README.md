@@ -1,3 +1,42 @@
+## phidgets_drivers (noetic) - 1.0.8-1
+
+The packages in the `phidgets_drivers` repository were released into the `noetic` distro by running `/usr/bin/bloom-release phidgets_drivers --rosdistro noetic -y` on `Wed, 06 Dec 2023 11:30:03 -0000`
+
+These packages were released:
+- `libphidget22`
+- `phidgets_accelerometer`
+- `phidgets_analog_inputs`
+- `phidgets_analog_outputs`
+- `phidgets_api`
+- `phidgets_digital_inputs`
+- `phidgets_digital_outputs`
+- `phidgets_drivers`
+- `phidgets_gyroscope`
+- `phidgets_high_speed_encoder`
+- `phidgets_ik`
+- `phidgets_magnetometer`
+- `phidgets_motors`
+- `phidgets_msgs`
+- `phidgets_spatial`
+- `phidgets_temperature`
+
+Version of package(s) in repository `phidgets_drivers`:
+
+- upstream repository: https://github.com/ros-drivers/phidgets_drivers.git
+- release repository: https://github.com/ros-drivers-gbp/phidgets_drivers-release.git
+- rosdistro version: `1.0.7-1`
+- old version: `1.0.7-1`
+- new version: `1.0.8-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## phidgets_drivers (noetic) - 1.0.7-1
 
 The packages in the `phidgets_drivers` repository were released into the `noetic` distro by running `/usr/bin/bloom-release phidgets_drivers --ros-distro noetic -y` on `Thu, 02 Mar 2023 12:31:40 -0000`
