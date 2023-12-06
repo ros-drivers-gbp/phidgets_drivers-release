@@ -164,7 +164,7 @@ tracks:
     last_version: 1.0.8
     name: phidgets_drivers
     patches: null
-    release_inc: '1'
+    release_inc: '2'
     release_repo_url: ssh://git@github.com/ros-drivers-gbp/phidgets_drivers-release.git
     release_tag: :{version}
     ros_distro: noetic
