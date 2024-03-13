@@ -2,6 +2,11 @@
 Changelog for package phidgets_api
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.9 (2024-03-13)
+------------------
+* Add support for Phidgets Humidity sensors (`#173 <https://github.com/ros-drivers/phidgets_drivers/issues/173>`_)
+* Contributors: Gary Edwards
+
 1.0.8 (2023-11-27)
 ------------------
 
