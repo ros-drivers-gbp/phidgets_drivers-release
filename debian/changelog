@@ -1,0 +1,15 @@
+ros-noetic-phidgets-humidity (1.0.10-1focal) focal; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 07 May 2025 22:00:00 -0000
+
+ros-noetic-phidgets-humidity (1.0.9-1focal) focal; urgency=high
+
+  * Add support for Phidgets Humidity sensors (#173 <https://github.com/ros-drivers/phidgets_drivers/issues/173>)
+    I have done a find and replace on the phidgets_temperature package to get the Phidgets Humidity sensor working. Tested with a HUM1001_0.
+  * Contributors: Gary Edwards
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 12 Mar 2024 23:00:00 -0000
+
+
