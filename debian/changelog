@@ -1,0 +1,8 @@
+ros-noetic-phidgets-current-inputs (1.0.10-1focal) focal; urgency=high
+
+  * Add support for Phidgets Current sensors (#148 <https://github.com/ros-drivers/phidgets_drivers/issues/148>)
+  * Contributors: Martin Günther, Ben Schattinger
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 07 May 2025 22:00:00 -0000
+
+
